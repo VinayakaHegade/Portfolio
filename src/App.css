@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* ======== VARIABLE CSS ========*/
+:root {
+  --header-height: 3 rem;
+
+
+  /* ======== COLORS ========*/
+  /* Color mode (hue, saturation, lightness) */
+  --hue: 0;
+  --sat: 0%;
+  --title-color: hsl(var(--hue), var(--sat), 20%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
+  --text-color: hsl(var(--hue), var(--sat), 46%);
+  --body-color: hsl(var(--hue), var(--sat), 98%);
+  --container-color: #fff;
+
+  /* ======== FONT AND TYPOGRAPHY ========*/
+  --body-font: "Poppins", sans-serif;
+
+  /*.5rem = 8px | 1rem = 16px */
+  --big-font-size: 3.5 rem;
+  --h1-font-size: 2.25 rem;
+  --h2-font-size: 1.5 rem;
+  --h3-font-size: 1.25 rem;
+  --normal-font-size: 1 rem;
+  --small-font-size: 0.875 rem;
+  --smaller-font-size: 0.813 rem;
+  --tiny-font-size: 0.625 rem;
+
+  /* ======== FONT WEIGHT ========*/
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /* ======== MARGIN BOTTOM ========*/
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /* ======== Z INDEX ========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+
+}
+
+
+/* ================== RESPONSIVE TYPOGRAPHY ================== */
+@media screen and (max-width: 992px) {
+  :root {
+    --big-font-size: 2.75 rem;
+    --h1-font-size: 1.5 rem;
+    --h2-font-size: 1.25 rem;
+    --h3-font-size: 1 rem;
+    --normal-font-size: 0.938 rem;
+    --small-font-size: 0.813 rem;
+    --smaller-font-size: 0.75 rem;
+  }
+}
+
+/* ======== BASE ========*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color)
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  /* object-fit: contain; */
+}
+
+
+/* ======== REUSABLE CSS CLASSES ========*/
+.section {
+  padding: 6rem 0 2rem;
+}
+
+.section_title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+}
+
+.section_subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 4rem;
+}
+
+.section_title,
+.section_subtitle {
+  text-align: center;
+}
+
+/* ======== LAYOUT ========*/
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* ======== BUTTONS ========*/
+.button {
+  display: inline-block;
+  background-color: var(--title-color);
+  color: var(--container-color);
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: var(--font-medium);
+}
+
+.button_hover {
+  background-color: var(--title-color-dark);
+}
+
+.button_icon {
+  margin-left: var(--mb-0-5);
+}
+
+.button_flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ======== BREAKPOINTS ========*/
+/* For large devices */
+@media screen and (max-width: 992px) {}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {}
+
+/* For small devices */
+@media screen and (max-width: 350px) {}
+
+
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */

@@ -2,7 +2,7 @@
 
 /* ======== VARIABLE CSS ========*/
 :root {
-  --header-height: 3 rem;
+  --header-height: 3rem;
 
 
   /* ======== COLORS ========*/
@@ -19,14 +19,14 @@
   --body-font: "Poppins", sans-serif;
 
   /*.5rem = 8px | 1rem = 16px */
-  --big-font-size: 3.5 rem;
-  --h1-font-size: 2.25 rem;
-  --h2-font-size: 1.5 rem;
-  --h3-font-size: 1.25 rem;
-  --normal-font-size: 1 rem;
-  --small-font-size: 0.875 rem;
-  --smaller-font-size: 0.813 rem;
-  --tiny-font-size: 0.625 rem;
+  --big-font-size: 3.5rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+  --tiny-font-size: 0.625rem;
 
   /* ======== FONT WEIGHT ========*/
   --font-normal: 400;
@@ -53,13 +53,13 @@
 /* ================== RESPONSIVE TYPOGRAPHY ================== */
 @media screen and (max-width: 992px) {
   :root {
-    --big-font-size: 2.75 rem;
-    --h1-font-size: 1.5 rem;
-    --h2-font-size: 1.25 rem;
-    --h3-font-size: 1 rem;
-    --normal-font-size: 0.938 rem;
-    --small-font-size: 0.813 rem;
-    --smaller-font-size: 0.75 rem;
+    --big-font-size: 2.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
   }
 }
 
@@ -171,9 +171,14 @@ img {
   align-items: center;
 }
 
-/* ======== BREAKPOINTS ========*/
+/* ============= BREAKPOINTS =============*/
 /* For large devices */
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+}
 
 /* For medium devices */
 @media screen and (max-width: 768px) {}
@@ -181,49 +186,9 @@ img {
 @media screen and (max-width: 576px) {}
 
 /* For small devices */
-@media screen and (max-width: 350px) {}
-
-
-
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */

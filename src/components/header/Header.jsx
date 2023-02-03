@@ -1,7 +1,11 @@
 import React from "react";
+import { useState } from "react";
 import "./header.css";
 
 function Header() {
+  /* ============= Toggle Menu =============*/
+  const [toggle, setToggle] = useState(false);
+
   return (
     <header className="header">
       <nav className="nav container">
@@ -9,7 +13,7 @@ function Header() {
           Vinayak
         </a>
 
-        <div className="nav__menu">
+        <div className={toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">
               <a href="#home" className="nav__link active-link">
@@ -38,10 +42,13 @@ function Header() {
             </li>
           </ul>
 
-          <i className="uil uil-times nav__close"></i>
+          <i
+            className="uil uil-times nav__close"
+            onClick={() => setToggle(!toggle)}
+          ></i>
         </div>
 
-        <div className="nav__toggle">
+        <div className="nav__toggle" onClick={() => setToggle(!toggle)}>
           <i className="uil uil-apps"></i>
         </div>
       </nav>

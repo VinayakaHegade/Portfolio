@@ -1,4 +1,5 @@
 import React from "react";
+import Resume from "../../assets/John-Cv.pdf"
 
 function Data() {
   return (
@@ -61,7 +62,7 @@ function Data() {
         India. I'm looking out for entry level opportunities in web development.
       </p>
 
-      <a href="#resume" className="button button--flex">
+      <a download="" href={Resume} className="button button--flex">
         Download Resume
         <svg
           className="button__icon"

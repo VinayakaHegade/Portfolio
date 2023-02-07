@@ -1,4 +1,5 @@
 import React from "react";
+import "./contact.css";
 
 function Contact() {
   return (
@@ -40,6 +41,21 @@ function Contact() {
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
+
+            <div className="contact__card">
+              <i className="bx bxl-twitter contact__card-icon"></i>
+
+              <h3 className="contact__card-title">Twitter</h3>
+              <span className="contact__card-data">@vinayakhegde8</span>
+
+              <a
+                href="https://twitter.com/vinayakhegde8"
+                className="contact__button"
+              >
+                Write me
+                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -67,7 +83,7 @@ function Contact() {
               />
             </div>
 
-            <div className="contact__form-div">
+            <div className="contact__form-div contact__form-area">
               <label className="contact__form-tag">Message</label>
               <textarea
                 name="project"

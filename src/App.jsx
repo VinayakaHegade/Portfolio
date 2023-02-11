@@ -5,6 +5,7 @@ import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import ScrollUp from "./components/scrollup/ScrollUp";
 
 function App() {
   return (
@@ -14,8 +15,10 @@ function App() {
         <Home />
         <About />
         <Contact />
-        <Footer />
       </main>
+
+      <Footer />
+      <ScrollUp />
     </>
   );
 }

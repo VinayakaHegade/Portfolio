@@ -1,5 +1,5 @@
 import React from "react";
-import Resume from "../../assets/John-Cv.pdf"
+import Resume from "../../assets/Vinayak's_Resume.pdf"
 
 function Data() {
   return (

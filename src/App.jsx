@@ -6,6 +6,7 @@ import Home from "./components/home/Home";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import ScrollUp from "./components/scrollup/ScrollUp";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <main className="main">
         <Home />
         <About />
+        <Projects />
         <Contact />
       </main>
 

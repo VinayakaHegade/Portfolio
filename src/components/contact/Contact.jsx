@@ -1,21 +1,20 @@
-import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import React, { useRef } from "react";
 import "./contact.css";
 
 function Contact() {
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (event) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_w5v0nqu",
-        "template_ll7v08f",
-        form.current,
-        "PB1yGPAMX_mmArctF"
-      )
-      e.target.reset()
+    const response = await emailjs.sendForm(
+      "service_w5v0nqu",
+      "template_ll7v08f",
+      form.current,
+      "PB1yGPAMX_mmArctF"
+    );
+    event.target.reset();
   };
 
   return (
@@ -86,6 +85,7 @@ function Contact() {
                 name="name"
                 className="contact__form-input"
                 placeholder="Insert your name"
+                required
               />
             </div>
 
@@ -96,6 +96,7 @@ function Contact() {
                 name="email"
                 className="contact__form-input"
                 placeholder="Insert your mail"
+                required
               />
             </div>
 
@@ -107,6 +108,7 @@ function Contact() {
                 rows="10"
                 className="contact__form-input"
                 placeholder="Write your message"
+                required
               ></textarea>
             </div>
 

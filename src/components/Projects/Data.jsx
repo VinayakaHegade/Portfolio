@@ -6,6 +6,7 @@ import Tetris from "../../assets/tetris.png";
 import Portfolio from "../../assets/portfolio.png";
 import Convio from "../../assets/Convio.png";
 import MovieSearch from "../../assets/movie-search.png";
+import EcommAuth from "../../assets/ecomm-auth.png";
 
 
 export const projectsData = [
@@ -27,6 +28,14 @@ export const projectsData = [
   },
   {
     id: 3,
+    image: EcommAuth,
+    title: "User Interest Tracker",
+    category: "React",
+    demo: "https://ecomm-auth.vercel.app",
+    code: "https://github.com/VinayakaHegade/e-commerce-auth",
+  },
+  {
+    id: 4,
     image: MovieSearch,
     title: "Movie Search App",
     category: "React",
@@ -34,7 +43,7 @@ export const projectsData = [
     code: "https://github.com/VinayakaHegade/Movie-Search",
   },
   {
-    id: 4,
+    id: 5,
     image: Trello,
     title: "Trello Board",
     category: "React",
@@ -42,7 +51,7 @@ export const projectsData = [
     code: "https://github.com/VinayakaHegade/Trello-Board",
   },
   {
-    id: 5,
+    id: 6,
     image: Wordle,
     title: "Wordle - 5 letter word game",
     category: "React",
@@ -50,7 +59,7 @@ export const projectsData = [
     code: "https://github.com/VinayakaHegade/React-Wordle",
   },
   {
-    id: 6,
+    id: 7,
     image: AceHunter,
     title: "Ace Hunter - Guess the ace",
     category: "Vanilla JS",
@@ -58,7 +67,7 @@ export const projectsData = [
     code: "https://github.com/VinayakaHegade/HuntTheAce",
   },
   {
-    id: 7,
+    id: 8,
     image: Tetris,
     title: "Tetris",
     category: "Vanilla JS",
@@ -66,7 +75,7 @@ export const projectsData = [
     code: "https://github.com/VinayakaHegade/tetris-game",
   },
   {
-    id: 8,
+    id: 9,
     image: Portfolio,
     title: "Portfolio",
     category: "React",

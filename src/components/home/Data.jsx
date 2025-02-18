@@ -62,7 +62,7 @@ function Data() {
         India. I'm looking out for entry level opportunities in web development.
       </p>
 
-      <a download="" href={Resume} className="button button--flex">
+      <a download="Vinayak_Resume" href={Resume} className="button button--flex">
         Download Resume
         <svg
           className="button__icon"
